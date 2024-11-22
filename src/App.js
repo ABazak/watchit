@@ -42,19 +42,17 @@ function App() {
   return (
     <div className="App">
       <Grid container spacing={2} sx={{ padding: "15px" }}>
-        {mockData.map(({ id, name, time, image }, index) => {
-          return (
-            <Grid size={3} key={index}>
-              <SingleCard
-                id={id}
-                name={name}
-                time={time}
-                image={image}
-                makeClick={handleCardClick}
-              />
-            </Grid>
-          );
-        })}
+        {mockData.map(({ id, name, time, image }, index) => (
+          <Grid size={3} key={index}>
+            <SingleCard
+              id={id}
+              name={name}
+              time={time}
+              image={image}
+              makeClick={handleCardClick}
+            />
+          </Grid>
+        ))}
       </Grid>
     </div>
   );
