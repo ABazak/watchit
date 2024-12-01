@@ -1,9 +1,6 @@
 
-function App() {
-  const handleCardClick = (id) => {
-    console.log(`Movie ID: ${id}`);
-  };
 
+function App() {
   return (
     <div className="App">
 
